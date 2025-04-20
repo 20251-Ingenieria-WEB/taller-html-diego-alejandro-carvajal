@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Taller HTML CSS JS</title>
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body>
+    <h1 class="title">
+      DOGELAND
+      <img src="./images/paw.png" alt="Paw Logo" class="paw-logo" />
+    </h1>
+
+    <div class="filter-container">
+      <input
+        type="text"
+        id="breed-filter"
+        placeholder="Filtrar razas..."
+        class="filter-input"
+      />
+      <button id="load-breeds" class="load-button">Cargar razas</button>
+    </div>
+
+    <ul id="breeds-container">
+      <!-- Aquí se mostrarán las razas de perros -->
+    </ul>
+    <script src="./scripts/script.js" defer></script>
+  </body>
+  <footer>
+    <p>Desarrollado por Diego Alejandro Carvajal Díaz</p>
+    <p>Curso de HTML, CSS y JS</p>
+    <p>Ingeniería Web</p>
+    <p>2025</p>
+  </footer>
+</html>

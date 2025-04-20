@@ -1,0 +1,173 @@
+* {
+  background-color: antiquewhite;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px; /* Espaciado entre el texto y el logo */
+}
+
+.paw-logo {
+  background-color: chocolate;
+  width: 40px; /* Ajusta el tamaño del logo */
+  height: 40px;
+  object-fit: contain; /* Asegura que la imagen no se deforme */
+}
+
+h1 {
+  color: antiquewhite;
+  background-color: chocolate;
+  padding: 20px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  text-align: center;
+  font-size: 50px;
+  font-family: Arial, sans-serif;
+  max-width: 50%;
+  min-width: 300px;
+  align-self: center;
+}
+
+.filter-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 20px;
+  padding: 10px;
+}
+
+#breeds-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+}
+
+.breed-card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 16px;
+  text-align: center;
+  width: 200px;
+  background-color: burlywood;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.breed-card img {
+  width: 100%; /* Ajustar al ancho del contenedor */
+  max-height: 150px; /* Altura fija para uniformidad */
+  object-fit: cover; /* Recortar la imagen para que se ajuste al contenedor */
+  border-radius: 8px; /* Mantener bordes redondeados */
+}
+
+img:hover {
+  transform: scale(1.2); /* Aumentar el tamaño de la imagen al pasar el mouse */
+  transition: transform 0.3s ease;
+}
+
+.sub-breed-title {
+  margin: 5px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  margin-top: 10px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  background-color: #f5deb3; /* Color de fondo para el título de subespecies */
+  padding: 4px 8px;
+  border-radius: 4px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para la lista de subespecies */
+.sub-breeds-list {
+  display: flex; /* Usar flexbox para organizar las subespecies */
+  flex-wrap: wrap; /* Permitir que las subespecies se ajusten en varias filas */
+  gap: 8px; /* Espaciado entre los elementos */
+  padding: 0;
+  list-style-type: none; /* Eliminar viñetas */
+  justify-content: center; /* Centrar los elementos */
+  background-color: burlywood;
+}
+.sub-breed-item {
+  font-size: 14px;
+  color: #333;
+  background-color: #f5deb3; /* Color de fondo para las subespecies */
+  padding: 4px 8px;
+  border-radius: 4px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+.breed-name {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 8px;
+  color: chocolate;
+  font-family: Arial, sans-serif;
+  border-radius: 5px;
+}
+.filter-input {
+  margin: 20px;
+  padding: 20px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  width: 50%;
+  min-width: 200px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: white;
+}
+/* Estilo para el botón de cargar razas */
+.load-button {
+  margin: 10px;
+  padding: 10px 20px;
+  height: 55px;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  background-color: chocolate;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease;
+}
+
+.load-button:hover {
+  background-color: darkorange;
+}
+
+.load-button:disabled {
+  background-color: #d3d3d3;
+  cursor: not-allowed;
+}
+
+footer {
+  margin-top: 20px; /* Empuja el footer hacia abajo */
+  padding: 20px;
+  background-color: chocolate;
+  text-align: center;
+  width: 100%;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+footer p {
+  background-color: chocolate;
+  text-decoration: none;
+  font-weight: bold;
+}
